@@ -1,0 +1,17 @@
+{
+  "name": "arbt-solana",
+  "version": "1.0.0",
+  "description": "Solana arbitrage bot using Jupiter",
+  "main": "bot/index.js",
+  "scripts": {
+    "start": "node bot/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@jup-ag/core": "^3.0.0",
+    "@solana/web3.js": "^1.74.0",
+    "bs58": "^5.0.0",
+    "dotenv": "^16.3.1",
+    "jsbi": "^4.3.0"
+  }
+}
