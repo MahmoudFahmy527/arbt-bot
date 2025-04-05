@@ -1,0 +1,37 @@
+{
+  "name": "arbt-bot",
+  "version": "1.0.0",
+  "description": "Arbitrage bot combining EVM smart contract arbitrage with Solana arbitrage capabilities",
+  "private": true,
+  "workspaces": [
+    "evm",
+    "solana"
+  ],
+  "scripts": {
+    "install:all": "yarn install && cd evm && yarn install && cd ../solana && yarn install",
+    "start:evm": "cd evm && yarn bot",
+    "start:solana": "cd solana && yarn start",
+    "build:evm": "cd evm && yarn compile",
+    "deploy:evm": "cd evm && yarn deploy",
+    "test:evm": "cd evm && yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MahmoudFahmy527/arbt-bot.git"
+  },
+  "keywords": [
+    "arbitrage",
+    "ethereum",
+    "solana",
+    "defi",
+    "trading",
+    "bot",
+    "flash-loan"
+  ],
+  "author": "ARBT Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MahmoudFahmy527/arbt-bot/issues"
+  },
+  "homepage": "https://github.com/MahmoudFahmy527/arbt-bot#readme"
+}
